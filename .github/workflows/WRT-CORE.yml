@@ -147,7 +147,8 @@ jobs:
       - name: Update Feeds
         run: |
           cd ./wrt/
-
+          cat $GITHUB_WORKSPACE/Config/filogic.mk >> ./target/linux/mediatek/image/filogic.mk
+          cat $GITHUB_WORKSPACE/Config/mt7981b-newland-nl-wr8103.dts > ./target/linux/mediatek/dts/mt7981b-newland-nl-wr8103.dts
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
