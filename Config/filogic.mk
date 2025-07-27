@@ -4,6 +4,7 @@ define Device/newland_nl-wr8103
   DEVICE_DTS := mt7981b-newland-nl-wr8103
   DEVICE_DTS_DIR := ../dts
   SUPPORTED_DEVICES := newland,nl-wr8103
+  DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware
   UBINIZE_OPTS := -E 5
   BLOCKSIZE := 128k
   PAGESIZE := 2048
